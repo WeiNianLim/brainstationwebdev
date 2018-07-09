@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" 
+        integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" 
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <script
+        src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    <script>
+        $(function(){
+            $(window).on('resize', function(){
+                var window = $(this); //this = window
+                if (window.width() <= 991.98) { // the >= means greater or equal to 820px.
+	        	    //change class of the element:
+                    $("#artistName").removeClass("text-left").addClass("text-center");
+		            //Or just changing the attribute itself
+	        	    //$("#artistName").css("text-align", "center");
+                } else if (window.width() >= 992){
+                    $("#artistName").removeClass("text-center").addClass("text-left");
+                }
+                if (window.width() <= 575.99) { // the >= means greater or equal to 820px.
+	        	    //change class of the element:
+                    $("#europeId").removeClass("text-center").addClass("text-left");
+		            //Or just changing the attribute itself
+	        	    //$("#artistName").css("text-align", "center");
+                } else if (window.width() >= 576){
+                    $("#europeId").removeClass("text-left").addClass("text-center");
+                }
+            });
+            $('#northAmericaAnchor').click(function() {
+                $('#northAmericaAnchor').css('color','gold');                
+                $('#southAmericaAnchor').css('color','white');
+                $('#europeAnchor').css('color','white');
+                $('#internationalAnchor').css('color','white');
+                $('#northAmericaAnchor').css('text-decoration','underline');
+                $('#southAmericaAnchor').css('text-decoration','none');
+                $('#europeAnchor').css('text-decoration','none');
+                $('#internationalAnchor').css('text-decoration','none');
+            });
+            $('#southAmericaAnchor').click(function() {
+                $('#northAmericaAnchor').css('color','white');
+                $('#southAmericaAnchor').css('color','gold');
+                $('#europeAnchor').css('color','white');
+                $('#internationalAnchor').css('color','white');
+                $('#northAmericaAnchor').css('text-decoration','none');
+                $('#southAmericaAnchor').css('text-decoration','underline');
+                $('#europeAnchor').css('text-decoration','none');
+                $('#internationalAnchor').css('text-decoration','none');
+            });
+            $('#europeAnchor').click(function() {
+                $('#northAmericaAnchor').css('color','white');
+                $('#southAmericaAnchor').css('color','white');
+                $('#europeAnchor').css('color','gold');
+                $('#internationalAnchor').css('color','white');
+                $('#northAmericaAnchor').css('text-decoration','none');
+                $('#southAmericaAnchor').css('text-decoration','none');
+                $('#europeAnchor').css('text-decoration','underline');
+                $('#internationalAnchor').css('text-decoration','none');
+            });
+            $('#internationalAnchor').click(function() {
+                $('#northAmericaAnchor').css('color','white');
+                $('#southAmericaAnchor').css('color','white');
+                $('#europeAnchor').css('color','white');
+                $('#internationalAnchor').css('color','gold');
+                $('#northAmericaAnchor').css('text-decoration','none');
+                $('#southAmericaAnchor').css('text-decoration','none');
+                $('#europeAnchor').css('text-decoration','none');
+                $('#internationalAnchor').css('text-decoration','underline');
+            });
+        });
+        </script>
+    <title>Kendrick Lamar Fansite</title>
+</head>
+<body>
+   <header>       
+       <nav class="row container">
+           <div id="artistName" class="col-lg-9 col-md-9 col-sm-12 col-12 text-left">KENDRICK LAMAR</div>
+           <div id="navItem" class="col-lg-1 col-md-1 col-sm-4 col-12 text-center"><a href="#aboutAnchor">ABOUT</a></div>
+           <div id="navItem" class="col-lg-1 col-md-1 col-sm-4 col-12 text-center"><a href="#musicAnchor">MUSIC</a></div>
+           <div id="navItem" class="col-lg-1 col-md-1 col-sm-4 col-12 text-center"><a href="#tourAnchor">TOUR</a></div>
+       </nav>
+   </header>
+   <section id="aboutAnchor" class="aboutSection">
+        <div class="aboutSectionBio">
+            <p >
+                There are many variations of passages of Lorem Ipsum available, but the majority have suffered 
+                alteration in some form, by injected humour, or randomised words which don't look even slightly 
+                believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't 
+                anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet 
+                tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. 
+                It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, 
+                to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free 
+                from repetition, injected humour, or non-characteristic words etc.There are many variations of passages of Lorem Ipsum available, but the majority have suffered 
+                alteration in some form, by injected humour, or randomised words which don't look even slightly 
+                believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't 
+                anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet 
+                tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. 
+                It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, 
+                to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free 
+                from repetition, injected humour, or non-characteristic words etc.There are many variations of passages of Lorem Ipsum available, but the majority have suffered 
+                alteration in some form, by injected humour, or randomised words which don't look even slightly 
+                believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't 
+                anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet 
+                tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. 
+                It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, 
+                to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free 
+                from repetition, injected humour, or non-characteristic words etc.
+            </p>
+        </div>
+         
+
+        <!-- <p class="col-lg-6 col-md-6 col-sm-12 col-12">If I am gonna tell a real story, I'm gonna start with my name.
+            <br><br> KENDRICK LAMAR
+        </p>
+        <p class="col-lg-6 col-md-6 col-sm-12 col-12">
+            There are many variations of passages of Lorem Ipsum available, but the majority have suffered 
+            alteration in some form, by injected humour, or randomised words which don't look even slightly 
+            believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't 
+            anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet 
+            tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. 
+            It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, 
+            to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free 
+            from repetition, injected humour, or non-characteristic words etc.
+        </p> -->
+    </section>
+    <section id="musicAnchor" class="musicSection">        
+        <div class="layer">     
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-12">                   
+                        <div class="card">
+                            <img class="card-img-top img-fluid" src="img/kldamn.jpeg" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                        </div>
+                    </div> 
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-12">                   
+                        <div class="card">
+                            <img class="card-img-top img-fluid" src="img/klUntitled.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                        </div>
+                    </div> 
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-12">                   
+                        <div class="card">
+                            <img class="card-img-top img-fluid" src="img/klToPimpAButterfy.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-12">                   
+                        <div class="card">
+                            <img class="card-img-top img-fluid" src="img/klGoodKidMaadCity.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                        </div>
+                    </div>                    
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-12">                   
+                        <div class="card">
+                            <img class="card-img-top img-fluid" src="img/klSection80.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                        </div>
+                    </div> 
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-12">                   
+                        <div class="card">
+                            <img class="card-img-top img-fluid" src="img/klOverlyDedicated.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                        </div>
+                    </div> 
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-12">                   
+                        <div class="card">
+                            <img class="card-img-top img-fluid" src="img/klEP.jpeg" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                        </div>
+                    </div> 
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-12">                   
+                        <div class="card">
+                            <img class="card-img-top img-fluid" src="img/klC4.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+            </div>            
+        </div>
+    </section>
+    <section id="tourAnchor" class="tourSection">
+        <h1>THE KENDRICK LAMAR CONCERT</h1>
+        <div class="container row">
+            <div class="col-lg-2 col-md-2 col-sm-2 col-12">
+                <a id="northAmericaAnchor" href="#tourAnchor">NORTH AMERICA</a> 
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-2 col-12">
+                <a id="southAmericaAnchor" href="#tourAnchor">SOUTH AMERICA</a> 
+            </div>
+            <div id="europeId" class="col-lg-2 col-md-2 col-sm-2 col-12 text-center">
+                <a id="europeAnchor" href="#tourAnchor">EUROPE</a> 
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-2 col-12">
+                <a id="internationalAnchor" href="#tourAnchor">INTERNATIONAL</a> 
+            </div>            
+        </div>     
+        
+        <div id="northAmericaTickets">
+            <div id="ticketsContainer" class="container row">
+                <div id="date" class="col-lg-2 col-md-2 col-sm-2 col-12">
+                    <h6>AUG 13, 2018</h6>
+                </div>
+                <div id="venue" class="col-lg-3 col-md-3 col-sm-3 col-12">
+                    <h5>PEPSI CENTER, DENVER</h5>
+                </div>
+                <div  class="col-lg-2 col-md-2 col-sm-2 col-12">
+                    <a id="tickets" href="#">TICKETS</a>
+                </div>
+            </div>
+    
+            <div id="ticketsContainer" class="container row">
+                <div id="date" class="col-lg-2 col-md-2 col-sm-2 col-12">
+                    <h6>AUG 13, 2018</h6>
+                </div>
+                <div id="venue" class="col-lg-3 col-md-3 col-sm-3 col-12">
+                    <h5>PEPSI CENTER, DENVER</h5>
+                </div>
+                <div  class="col-lg-2 col-md-2 col-sm-2 col-12">
+                    <a id="tickets" href="#">TICKETS</a>
+                </div>
+            </div>
+    
+            <div id="ticketsContainer" class="container row">
+                <div id="date" class="col-lg-2 col-md-2 col-sm-2 col-12">
+                    <h6>AUG 13, 2018</h6>
+                </div>
+                <div id="venue" class="col-lg-3 col-md-3 col-sm-3 col-12">
+                    <h5>PEPSI CENTER, DENVER</h5>
+                </div>
+                <div  class="col-lg-2 col-md-2 col-sm-2 col-12">
+                    <a id="tickets" href="#">TICKETS</a>
+                </div>
+            </div>
+    
+            <div id="ticketsContainer" class="container row">
+                <div id="date" class="col-lg-2 col-md-2 col-sm-2 col-12">
+                    <h6>AUG 13, 2018</h6>
+                </div>
+                <div id="venue" class="col-lg-3 col-md-3 col-sm-3 col-12">
+                    <h5>PEPSI CENTER, DENVER</h5>
+                </div>
+                <div  class="col-lg-2 col-md-2 col-sm-2 col-12">
+                    <a id="tickets" href="#">TICKETS</a>
+                </div>
+            </div>
+    
+            <div id="ticketsContainer" class="container row">
+                <div id="date" class="col-lg-2 col-md-2 col-sm-2 col-12">
+                    <h6>AUG 13, 2018</h6>
+                </div>
+                <div id="venue" class="col-lg-3 col-md-3 col-sm-3 col-12">
+                    <h5>PEPSI CENTER, DENVER</h5>
+                </div>
+                <div  class="col-lg-2 col-md-2 col-sm-2 col-12">
+                    <a id="tickets" href="#">TICKETS</a>
+                </div>
+            </div>
+        </div>
+        <div id="southAmericaTickets">
+            <div id="ticketsContainer" class="container row">
+                <div id="date" class="col-lg-2 col-md-2 col-sm-2 col-12">
+                    <h6>JULY 17, 2018</h6>
+                </div>
+                <div id="venue" class="col-lg-3 col-md-3 col-sm-3 col-12">
+                    <h5>COCA COLA CENTER, MEXICO</h5>
+                </div>
+                <div  class="col-lg-2 col-md-2 col-sm-2 col-12">
+                    <a id="tickets" href="#">TICKETS</a>
+                </div>
+            </div>
+    
+            <div id="ticketsContainer" class="container row">
+                <div id="date" class="col-lg-2 col-md-2 col-sm-2 col-12">
+                    <h6>JULY 17, 2018</h6>
+                </div>
+                <div id="venue" class="col-lg-3 col-md-3 col-sm-3 col-12">
+                    <h5>Coca-cola</h5>
+                </div>
+                <div  class="col-lg-2 col-md-2 col-sm-2 col-12">
+                    <a id="tickets" href="#">TICKETS</a>
+                </div>
+            </div>
+    
+            <div id="ticketsContainer" class="container row">
+                <div id="date" class="col-lg-2 col-md-2 col-sm-2 col-12">
+                    <h6>JULY 17, 2018</h6>
+                </div>
+                <div id="venue" class="col-lg-3 col-md-3 col-sm-3 col-12">
+                    <h5>Coca-cola</h5>
+                </div>
+                <div  class="col-lg-2 col-md-2 col-sm-2 col-12">
+                    <a id="tickets" href="#">TICKETS</a>
+                </div>
+            </div>
+    
+            <div id="ticketsContainer" class="container row">
+                <div id="date" class="col-lg-2 col-md-2 col-sm-2 col-12">
+                    <h6>JULY 17, 2018</h6>
+                </div>
+                <div id="venue" class="col-lg-3 col-md-3 col-sm-3 col-12">
+                    <h5>Coca-cola</h5>
+                </div>
+                <div  class="col-lg-2 col-md-2 col-sm-2 col-12">
+                    <a id="tickets" href="#">TICKETS</a>
+                </div>
+            </div>
+    
+            <div id="ticketsContainer" class="container row">
+                <div id="date" class="col-lg-2 col-md-2 col-sm-2 col-12">
+                    <h6>JULY 17, 2018</h6>
+                </div>
+                <div id="venue" class="col-lg-3 col-md-3 col-sm-3 col-12">
+                    <h5>Coca-cola</h5>
+                </div>
+                <div  class="col-lg-2 col-md-2 col-sm-2 col-12">
+                    <a id="tickets" href="#">TICKETS</a>
+                </div>
+            </div>
+        </div>                
+    </section>
+</body>
+</html>

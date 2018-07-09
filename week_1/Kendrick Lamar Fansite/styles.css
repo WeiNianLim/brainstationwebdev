@@ -1,0 +1,183 @@
+html{
+    font-size: 14px;
+}
+header{
+    background-image: url(img/kl3.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-repeat: none;
+    font-family: monospace; 
+}
+
+
+header > .container{
+    max-width:100vw;
+    /* background-color: rgb(0,0,0,0.8); */
+    margin:0;
+}
+
+
+header > nav > #artistName{
+    /* padding-left:8rem; */
+    /* Helvetica Neue LT W01_77 Bd Cn","Times New Roman",Times,serif */
+    font-family:Helvetica, sans-serif;
+    font-weight:bolder;
+    color:white;
+    padding-top:1.2rem;
+    font-size: 3rem;
+
+    /* background-color:red; */
+}
+
+header > nav >.col-lg-1.col-md-1.col-sm-4.col-12{
+    padding-top: 3rem;
+}
+
+header > nav > div > a{
+    /* /adding:3rem; */
+    color: white; 
+}
+
+header > nav > div > a:hover{
+    /* /adding:3rem; */
+    color: gold; 
+    text-decoration: none;
+}
+
+.aboutSection{
+    background-image: url(img/kl2.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-repeat: none;
+    position: relative;
+}
+
+/* .aboutSection > .container{
+    position: absolute;
+    color: white;
+    background-color: rgb(0,0,0,0.8);
+    height: 40rem;
+    width: 20rem;
+    /* top: 0;
+    left:  20rem; 
+    float:right;
+} */
+
+.aboutSection > .col-lg-6.col-md-6.col-sm-12.col-12{
+    /* padding:5rem; */
+    /* margin:1rem;; */
+    background-color: rgb(255,255,255,0.8);
+}
+
+.aboutSection > container{
+    margin-left:auto;
+    margin-right:0;
+}
+
+.aboutSectionBio{
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    bottom: 10%;
+    max-width: 50rem;
+    padding: 4rem;
+    background-color: rgb(255,255,255,0.8);
+    border: solid 1px white;
+    border-radius: 6px;    
+    overflow-y:scroll;
+}
+
+.musicSection{
+    background-image: url(img/kl5.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-repeat: none;
+    position: relative;
+}
+
+.layer{
+    position: absolute;
+    background-color: rgb(255,255,255,0.8);
+    /* background-color: black; */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 5rem;
+    overflow-y:scroll;
+}
+
+.musicSection > .layer > .container > .row > .col-lg-3.col-md-4.col-sm-6.col-12{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+
+.tourSection{
+    background-image: url(img/klconcert2.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-repeat: none;
+    padding: 5%;
+}
+
+.tourSection > h1{
+    color: gold;
+    /* margin: 10rem; */
+}
+
+.tourSection > div > div > span{
+    color: white;
+}
+
+.tourSection > div > div > .col-lg-2.col-md-2.col-sm-2.col-lg-1.col-md-1.col-sm-1.col-12{
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.tourSection > div > div > a{
+    color: white;
+    /* white-space: nowrap; */
+}
+
+.tourSection > div > div > a:hover{
+    text-decoration: none;
+    color: gold;
+}
+
+#northAmericaAnchor{
+    color: gold;
+    text-decoration:underline;
+    /* font-weight: bolder; */
+}
+
+#ticketsContainer{
+    margin-top: 5%;
+}
+
+#southAmericaAnchor{
+    color: white;
+}
+
+#europeAnchor{
+    color: white;
+}
+
+#internationalAnchor{
+    color: white;
+}
+
+#date{
+    color: white;
+}
+
+#venue{
+    color: white;
+}
+
+#tickets{
+    border: solid 0.1rem white;
+    color: white;
+    padding: 0.5rem;
+}
+
