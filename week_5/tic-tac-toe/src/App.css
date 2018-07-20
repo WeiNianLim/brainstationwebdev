@@ -1,0 +1,30 @@
+.App {
+  text-align: center;
+}
+
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+table { 
+  border-collapse: collapse; 
+  border-spacing: 0; 
+}
+
+#board { 
+  padding: 0px; 
+  margin: 0 auto; 
+  margin-top: 25px; 
+}
+
+#board tr td { 
+  width: 80px; 
+  height: 80px; 
+  border: 1px solid #1c1c1c; 
+  font-family: Helvetica; 
+  font-size: 30px; 
+  text-align: center; 
+}
+ 
